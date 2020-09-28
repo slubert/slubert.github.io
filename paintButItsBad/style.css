@@ -17,7 +17,7 @@
 }
 #row-container{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     height: 500px;
     width: 500px;
     border: 2px solid black;

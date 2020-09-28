@@ -1,6 +1,6 @@
 let selectedColorElement
 
-rowCount = 64
+rowCount = 256
 let colors = ["Blue", "pink", "yellow", "green", "red", "orange", "lightBlue", "purple", "white", "black"]
 
 
