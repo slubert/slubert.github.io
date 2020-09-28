@@ -7,6 +7,9 @@ let colors = ["Blue", "pink", "yellow", "green", "red", "orange", "lightBlue", "
 const toolBarElement = document.getElementById("toolbar") 
 const rowContainerElement = document.getElementById("row-container")
 
+window.addEventListener('resize', resizePixelGrid);
+resizePixelGrid();
+
 colors.map(color => {
     let colorElement = document.createElement("a");
     colorElement.href = "#"
@@ -36,4 +39,10 @@ function onSelectColor(e){
 function onPaint(e){
     e.target.style.backgroundColor = 
         selectedColorElement.style.backgroundColor;
+}
+
+function resizePixelGrid() {
+    const size = 0.9 * Math.min(rowContainerElement.parentElement.clientWidth, rowContainerElement.parentElement.clientHeight);
+    rowContainerElement.style.width = `${size}px`;
+    rowContainerElement.style.height = `${size}px`;
 }
