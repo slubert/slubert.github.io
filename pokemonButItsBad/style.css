@@ -1,0 +1,36 @@
+.pageContainer{
+    background-color: rgb(48, 48, 48);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+h3{
+    color: white;
+    font-size: 20px;
+}
+#searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.centerShiny{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    border-radius: 3px;
+}
+.button{
+    border-radius: 3px;
+}
