@@ -1,0 +1,15 @@
+.pageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+div{
+    margin: 14px;
+}
+
+p{
+    margin: 1px;
+}
