@@ -95,3 +95,7 @@ function showBestTimes(){
     bestAverageTimeBox.style.display = null
     bestSingleTimeBox.style.display = null
 }
+
+window.addEventListener('touchstart', function(e) {
+    button.textContent = e.touches.length
+ }, false); 
