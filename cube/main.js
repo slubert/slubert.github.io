@@ -12,9 +12,8 @@ const button = document.getElementById("startButton");
 const bestAverageTimeBox = document.getElementById("bestAverageTimeBox");
 const bestAverageTime = document.getElementById("bestAverageTime");
 
-button.addEventListener('mousedown', onButtonDown);
-button.addEventListener('mouseup', onbuttonup)
-
+button.addEventListener('pointerdown', onButtonDown);
+button.addEventListener('pointerup', onbuttonup)
 
 output.style.display = "none"
 let counting = false;
