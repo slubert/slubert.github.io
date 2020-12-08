@@ -1,0 +1,128 @@
+.pageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+    #midBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+    }
+
+        .fiveRecentList{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            width: 100%;
+            /* background-color: gray; */
+        }
+            #spot1{
+                height: 100%;
+                width: 100%;
+                padding: 0rem 4rem;
+                font-size: 20px;
+                /* border-bottom: 1px solid black; */
+            }
+            #spot2{
+                height: 100%;
+                width: 100%;
+                padding: 0rem 4rem;
+                font-size: 20px;
+                /* border-bottom: 2px solid black; */
+            }  
+            #spot3{
+                height: 100%;
+                width: 100%;
+                padding: 0rem 4rem;
+                font-size: 20px;
+                /* border-bottom: 2px solid black; */
+            }
+            #spot4{
+                height: 100%;
+                width: 100%;
+                padding: 0rem 4rem;
+                font-size: 20px;
+                /* border-bottom: 2px solid black; */
+            }
+            #spot5{
+                height: 100%;
+                width: 100%;
+                padding: 0rem 4rem;
+                font-size: 20px;
+                /* border-bottom: 2px solid black; */
+            }
+            #averageTime{
+                height: 100%;
+                width: 100%;
+                text-decoration: underline;
+                padding: 0rem 5rem;
+                font-size: 30px;
+            }
+            #output{
+                font-size: 50px;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;;
+            }
+
+        .startBox{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            width: 100%;
+            /* background-color: hotpink; */
+        }
+            #startButton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                font-family: 'Roboto Slab', serif;
+                font-size: 3rem;
+                background-color: rgb(9, 255, 0);
+                color: white;
+                border-radius: 7px;
+            }
+            #bestSingleTimeBox{
+                height: 100%;
+                width: 100%;
+            }
+            #bestAverageTimeBox{
+                height: 100%;
+                width: 100%;
+            }
+            h3{
+                text-align: center;
+                width: 100%;
+                margin-top: 5%;
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.5rem;
+            }
+            h1{
+                text-align: center;
+                font-size: 3rem;
+                width: 100%;
+                margin-top: 15px;
+                font-family: 'Montserrat', sans-serif;;
+                text-decoration: underline;
+            }
+
+
+body{
+    margin: 0px;
+}
