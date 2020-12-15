@@ -8,10 +8,10 @@ const button = document.getElementById("startButton");
 const bestAverageTimeBox = document.getElementById("bestAverageTimeBox");
 const bestAverageTime = document.getElementById("bestAverageTime");
 
-button.addEventListener('pointerdown', onButtonDown);
-button.addEventListener('pointerup', onbuttonup)
+window.addEventListener('touchstart', onHoldDown);
+window.addEventListener('touchend', onHoldUp)
 
-// localStorage.removeItem('bestTimes');
+
 
 output.style.display = "none"
 let counting = false;
@@ -21,7 +21,7 @@ boxAmount = 5
 let times = []
 let sumOfAvridge
 
-
+//grabs the best times from local storage
 let bestTimes = JSON.parse(localStorage.getItem('bestTimes'))
 console.log(bestTimes)
 if (bestTimes == null){
@@ -35,42 +35,43 @@ else{
 
 
 
-function onButtonDown(){
-    if (!counting){
-        hide()
-        
-        output.style.display = null
-        output.textContent = 'relise to start'
-        button.textContent = null
-        button.style.backgroundColor = 'white'
-    }
-    else{
-        console.log('stop');
-        timeStop = new Date()
-
-        //checks if you have played 5 times
-        if (times.length >= boxAmount){
-            bestTimes = {
-                single: bestTimes.single,
-                average: currentAverageTime.textContent
-            }
-            localStorage.setItem('bestTimes', JSON.stringify(bestTimes))
-
-            console.log('too many')
-            times.length = 0;
+function onHoldDown(e){
+    if (e.touches.length < 6){
+        if (!counting){
+            hide()
+            
+            output.style.display = null
+            output.textContent = 'relise to start'
+            button.textContent = null
+            button.style.backgroundColor = 'white'
         }
-        
-        setToRcentFive(timeCalculate());
-
-        show()
-        button.textContent = 'HOLD'
-        button.style.backgroundColor = "rgb(9, 255, 0)"
-        output.style.display = 'none'
-        
+        else{
+            console.log('stop');
+            timeStop = new Date()
+    
+            //checks if you have played 5 times
+            if (times.length >= boxAmount){
+                bestTimes = {
+                    single: bestTimes.single,
+                    average: currentAverageTime.textContent
+                }
+                localStorage.setItem('bestTimes', JSON.stringify(bestTimes))
+    
+                console.log('too many')
+                times.length = 0;
+            }
+            
+            setToRcentFive(timeCalculate());
+    
+            show()
+            button.textContent = 'HOLD'
+            button.style.backgroundColor = "rgb(9, 255, 0)"
+            output.style.display = 'none'
+        }
     }
 }
 
-function onbuttonup(){
+function onHoldUp(e){
     if (!counting){
         console.log('start');
         timeStart = new Date()
@@ -150,6 +151,4 @@ function show(){
 
 
 
-// window.addEventListener('touchstart', function(e) {
-//     button.textContent = e.touches.length
-//  }, false);  
+// button.textContent = e.touches.length
