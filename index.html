@@ -9,24 +9,32 @@
 </head>
 <body>
     <div class="pageContainer">
-        <div class="middBox">
-            <h1 class="titleText">Mina project</h1>
-            <div>
-                <a href="https://github.com/slubert">Github</a>
-            </div>
-            <div>
-                <a href="https://slubert.github.io/gem/">game</a>
-                <p>Enkelt spel där amn samlar mynt och för varenda mynt man samlar ökar farten på en fiende. Det fins två fiender på planen och ena följer dig medans dena andra bara oker tills den slår i en vägg.</p>
-            </div>
-            <div>
-                <a href="https://slubert.github.io/pokemon/">pokemon search</a>
-                <p>Hämtar informationen om en pokemon från en API och visar det</p>
-            </div>
-            <div>
-                <a href="https://slubert.github.io/pong/">pong</a>
-                <p>Classigt pong spel där amn spelar mot datorn som räknar ut exat vart bollen skall fara och går till mitten om bollen är påväg mot spelaren</p>
+        <div class="languages">
+            <button id="english">english</button>
+            <button id="swedish">svenska</button>
+        </div>
+        <div class="projectBox">
+            <div class="middBox">
+                <h1 id="titleText">My projects</h1>
+                <div>
+                    <a href="https://github.com/slubert">Github</a>
+                </div>
+                <div>
+                    <a href="https://slubert.github.io/gem/">game</a>
+                    <p id="gameText">a simple game with two enemies, one bounces around the field randomly and gets a speed increase of 0.1 every time you collect a coin while the other is constantly following you </p>
+                </div>
+                <div>
+                    <a href="https://slubert.github.io/pokemon/">pokemon search</a>
+                    <p id="pokemonText">gets information and pictures from an API about the pokemon and displays it </p>
+                </div>
+                <div>
+                    <a href="https://slubert.github.io/pong/">pong</a>
+                    <p id="pongText">he classic pong game where you play against an AI that calculates where the ball will go and returns to the middle when the ball is moving towards you </p>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
