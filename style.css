@@ -1,5 +1,6 @@
 .pageContainer{
     background-color: rgb(65, 65, 65);
+    height: 100%;
     width: 100%;
     margin: 0px;
 }
@@ -8,9 +9,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
     margin: 0px;
-    margin-top: 1rem;
 }
 
 .languages{
@@ -42,6 +41,7 @@ div{
 }
 
 .middBox{
+    margin: 0px;
     display: flex;
     flex-direction: column;
     width: 500px;
